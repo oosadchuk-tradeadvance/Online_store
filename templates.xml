@@ -1,0 +1,23 @@
+<openerp>
+    <data>
+        <template id="index">
+            <t t-call="website.layout">
+                <t t-set ="title">Online_store</t>
+                     <div class="oe_structure">
+                        <div class="container">
+                          <t t-foreach="products" t-as="product">
+                             <p>
+                                 <t t-esc="product.id"/>
+                                 <t t-esc="product.name"/>
+                                 <t t-esc="product.category"/>
+                                 <t t-esc="product.price"/>
+                                 <t t-esc="product.amount"/>
+                                 <t t-esc="product.seller"/>
+                             </p>
+                          </t>
+                        </div>
+                    </div>
+                 </t>
+        </template>
+    </data>
+</openerp>
