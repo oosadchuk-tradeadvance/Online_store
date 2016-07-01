@@ -2,7 +2,7 @@
 from openerp import http
 
 class OnlineStore(http.Controller):
-    @http.route('/store/', auth='public', website=True)
+    @http.route('/my_store/', auth='public', website=True)
     def index(self, **kw):
         Products = http.request.env['online_store.products']
         return http.request.render('online_store.index', {

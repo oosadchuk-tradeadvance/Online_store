@@ -9,7 +9,7 @@
     <menuitem id="menu_online_store_content" parent="menu_online_store"
             name="Online store"/>
     <menuitem id="menu_online_store_content_products"
-            parent="menu_online_store_content"
+            parent="menu_online_store_contentt"
             action="action_online_store_products"/>
     </data>
 </openerp>
